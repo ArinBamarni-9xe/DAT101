@@ -3,12 +3,20 @@ import { printOut, newLine } from "../../common/script/utils.mjs";
 
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut(newLine);
+const eqsn = "2 + 3 * 2 - 4 * 6";
+const eqsninpt = 2 + 3 * (2 - 4) * 6
+const eqsnoutp = 2 + 3 * (2 - 4) * 6
+printOut (eqsn);
+printOut (eqsninpt);
+printOut (eqsnoutp);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut(newLine);
+const oneInch = 25.4 // millimeters
+const metersInMillimeters= 25.4 * 1000;
+const centimetersInMillimeters = 34*10;
+const millimeters = metersInMillimeters + centimetersInMillimeters;
+const inches = millimeters / oneInch;
+printOut (`25 meters = ${inches.toFixed(2)} inches`);
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
