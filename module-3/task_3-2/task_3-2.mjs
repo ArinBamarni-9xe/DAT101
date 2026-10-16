@@ -60,15 +60,15 @@ printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-{
-    for (let row = 1; row <= 7; row++) {
-        let rowText = "";
-        for (let column = 1; column <= 9; column ++) {
-            rowText += `${column === 1 ? "": " "} K${column}R${row}`
-        }
-        printOut(rowText); 
+let rowText = ""; 
+for (let row = 1; row <= 7; row++) {
+    for(let column = 1; column <= 9; column ++) {
+        rowText += " K"+column + "R" + row; 
     }
+    rowText += newLine; 
 }
+    printOut(rowText);
+
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
