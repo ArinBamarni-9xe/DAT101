@@ -98,11 +98,13 @@ printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-function rollDice () {
-    return Array.from({ length: 6},() => Math.floor(Math.random()* 6) + 1); 
-}
-printOut(rollDice()); 
-printOut(newLine);
+const d1 = Math.floor(Math.random() *6) +1; 
+const d2 = Math.floor(Math.random() *6) +1; 
+const d3 = Math.floor(Math.random() *6) +1;
+const d4 = Math.floor(Math.random() *6) +1;
+const d5 = Math.floor(Math.random() *6) +1;
+const d6 = Math.floor(Math.random() *6) +1; 
 
+const diceThrow = d1.toString() + " " + d2.toString() + " " + d3.toString() + " " + d4.toString() + " " + d5.toString() + " " + d6.toString();
 
- 
+printOut(diceThrow);
