@@ -105,6 +105,26 @@ const d4 = Math.floor(Math.random() *6) +1;
 const d5 = Math.floor(Math.random() *6) +1;
 const d6 = Math.floor(Math.random() *6) +1; 
 
-const diceThrow = d1.toString() + " " + d2.toString() + " " + d3.toString() + " " + d4.toString() + " " + d5.toString() + " " + d6.toString();
-
+const diceThrow = `${d1}${d2}${d3}${d4}${d5}${d6}`;
 printOut(diceThrow);
+
+let c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0;
+for( let i = 0; i < 6; i++) {
+    const c = diceThrow.charAt(i);
+    if(c === "1") {
+        c1++
+    } else if(c === "2") {
+        c2++
+    } else if(c === "3") {
+        c3++
+    } else if(c === "4") {
+        c4++
+    } else if(c === "5") {
+        c5++
+    } else {
+        c6++; 
+    }
+}
+const diceCount = `${c1}${c2}${c3}${c4}${c5}${c6}`;
+printOut(diceCount);
+printOut(newLine); 
