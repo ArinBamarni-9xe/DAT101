@@ -10,8 +10,34 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>
+        What is the difference between invoking and creating a function?
+        <p>Creating (defining) a function gives it a name and describes the code it will run. Invoking (calling) it runs that code.</p>
+      </li>
+      <li>
+        Explain the syntax regarding semicolons and code blocks.
+        <p>Semicolons end statements, such as assignments, function calls, and return statements. Curly braces group statements into a code block, such as a function body. A block itself does not need a semicolon after its closing brace when it belongs to a function, loop, or conditional.</p>
+      </li>
+      <li>
+        What happens when we try to store values from a function when it doesn't return any?
+        <p>The function call evaluates to <code>undefined</code>, so the variable receives <code>undefined</code>.</p>
+      </li>
+      <li>
+        How do we separate parameters from each other when creating a function?
+        <p>Separate parameters with commas inside the parentheses, for example <code>function add(first, second) { ... }</code>.</p>
+      </li>
+      <li>
+        Explain how parameter names are related during the invocation and creation of a function.
+        <p>Arguments in a function call are assigned to parameters by position, not by name. The parameter names are local names used inside the function and do not need to match the names of the variables passed as arguments.</p>
+      </li>
+      <li>
+        Explain why a parameter is undefined when a function call is missing a parameter.
+        <p>JavaScript assigns <code>undefined</code> to any parameter that has no corresponding argument, unless a default value is specified.</p>
+      </li>
+      <li>
+        Explain what happens when we use recursive functions.
+        <p>A recursive function calls itself, creating another function call each time. It needs a base case to stop; without one, calls continue until the program runs out of call stack space.</p>
+      </li>
     </ol>
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
